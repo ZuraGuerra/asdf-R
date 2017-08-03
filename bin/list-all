@@ -3,4 +3,4 @@
 source "$(dirname $0)/utils.sh"
 ensure_rbuild_installed
 
-"$(rbuild_command)" --definitions | tail -n 17 | xargs echo -n
+"$(rbuild_command)" --definitions | tail -n 17 | grep -v devel | xargs echo -n
