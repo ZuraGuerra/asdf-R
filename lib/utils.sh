@@ -5,7 +5,7 @@ ensure_rbuild_installed(){
 }
 
 download_rbuild(){
-	echo "Downloading R-env..."
+	echo "Downloading R-build..."
 	git clone "https://github.com/cirode/R-build.git" "$(rbuild_directory_path)"
   local old_path="$(pwd)"
   cd "$(rbuild_directory_path)"
