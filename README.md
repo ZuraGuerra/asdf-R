@@ -9,11 +9,18 @@ An R plugin for the [asdf](https://github.com/asdf-vm/asdf) version manager
 
 ## Dependencies
 
+This plugin compiles R from source, so I would recommend visiting the [R Installation and Administration](https://cran.r-project.org/doc/manuals/r-release/R-admin.html) webpage and looking at the required and optional dependencies for your platform
+
 This plugin utilises [R-Build](https://github.com/viking/R-build), however it will download this dependency as part of the installation process
 
 __NOTE:__ Due to a compilation issue on the main branch ( for which there is an open pull request ), this is currently pointing at a fork of the main at https://github.com/cirode/R-build
 
-Needed for compilation of R however is the xcode commandline tools
+### Essential for Linux
+
+
+### Essential for OSX
+
+The Xcode command line tools
 
      xcode-select --install
 
@@ -22,10 +29,12 @@ The build process also requires the following
 - java: For compilation of shared libs, needed for R-Studio
 - gcc: OSX comes with an LLVM version of gcc which R aparently has issues with
 - gfortran: Which in homebrew is included in the gcc library
+- liblzma: Provided by the xz package
+- xquartz: Which provides x11 is needed for displaying graphs etc
 
 On OSX these dependencies can be installed with
   
-    brew install gcc 
+    brew install gcc xz readline pcre
     brew cask install java
 
 
