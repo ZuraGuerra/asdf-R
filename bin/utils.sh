@@ -6,7 +6,7 @@ ensure_rbuild_installed(){
 
 download_rbuild(){
 	echo "Downloading R-env..."
-	git clone "https://github.com/cirode/asdf-R.git" "$(rbuild_directory_path)"
+	git clone "https://github.com/cirode/R-build.git" "$(rbuild_directory_path)"
   local old_path="$(pwd)"
   cd "$(rbuild_directory_path)"
   git checkout bug/compilation_issues #Open pull request at https://github.com/viking/R-build/pull/8
