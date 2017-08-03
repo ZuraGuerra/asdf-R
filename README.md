@@ -25,7 +25,8 @@ The build process also requires the following
 
 On OSX these dependencies can be installed with
   
-    brew install gcc java
+    brew install gcc 
+    brew cask install java
 
 
 

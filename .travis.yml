@@ -4,8 +4,8 @@ before_script:
   - git clone https://github.com/asdf-vm/asdf.git asdf
   - . asdf/asdf.sh
 before_install:
-  - if [ $TRAVIS_OS_NAME = linux ]; then echo 'LINUX'; fi
-  - if [ $TRAVIS_OS_NAME = osx ]; then  brew install gcc java; fi
+  - if [ $TRAVIS_OS_NAME = linux ]; then apt-get install gcc gfortran; fi
+  - if [ $TRAVIS_OS_NAME = osx ]; then  brew install gcc; brew cask install java; fi
 os:
   - linux
   - osx
