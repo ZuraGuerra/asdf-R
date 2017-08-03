@@ -1,6 +1,7 @@
 # asdf-R
 An R plugin for the [asdf](https://github.com/asdf-vm/asdf) version manager
 
+[![Build Status](https://api.travis-ci.org/cirode/asdf-R.svg?branch=master)](https://travis-ci.org/cirode/asdf-R)
 
 # Installation
 

@@ -3,4 +3,4 @@
 source "$(dirname $0)/utils.sh"
 ensure_rbuild_installed
 
-"$(rbuild_command)" --definitions | xargs echo -n
+"$(rbuild_command)" --definitions | egrep "^(?:[3-9]|[12]\d)\d*" | xargs echo -n
