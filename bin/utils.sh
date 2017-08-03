@@ -1,6 +1,6 @@
 ensure_rbuild_installed(){
 	if [ ! -f "$(rbuild_command)" ]; then
-		download_rbuild
+		download_rbuild 1>&2
 	fi
 }
 
