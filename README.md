@@ -35,7 +35,7 @@ The build process also requires the following
 On OSX these dependencies can be installed with
   
     brew install gcc xz readline pcre
-    brew cask install java
+    brew cask install java xquartz
 
 
 
